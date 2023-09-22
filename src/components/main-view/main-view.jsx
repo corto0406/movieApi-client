@@ -12,7 +12,7 @@ export const MainView = () => {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
-        fetch("https://openlibrary.org/search.json?q=star+wars")
+        fetch("https://movie-place-35ed6ca44a78.herokuapp.com")
             .then((response) => response.json())
             .then((data) => {
                 const moviesFromApi = data.docs.map((doc) => {
