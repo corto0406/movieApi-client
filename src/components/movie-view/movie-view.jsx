@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
-import "./book-view.scss";
+import "./movie-view.scss";
 
 export const MovieView = ({ movie }) => {
     const { movieTitle } = useParams();
