@@ -1,4 +1,6 @@
 movieApi-client
+
+
 Front end built with React framework and utalizing Material UI library for styling and functionality.
 
 App is built for learning React and libraries directed by the Career Foundry Coding Bootcamp.
