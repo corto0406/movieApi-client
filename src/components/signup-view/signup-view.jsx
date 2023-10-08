@@ -7,6 +7,7 @@ export const SignupView = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
+    const [birthday, setBirthday] = useState("");
 
 
     const handleSubmit = (event) => {
@@ -19,7 +20,8 @@ export const SignupView = () => {
             Birthday: birthday
         };
 
-        fetch("https://movie-place-35ed6ca44a78.herokuapp.com/signup", {
+
+        fetch("https://movie-place-35ed6ca44a78.herokuapp.com/users", {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
@@ -54,6 +56,17 @@ export const SignupView = () => {
                     type="text"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
+
+                />
+            </Form.Group>
+
+            <Form.Group controlId="formBirthday">
+                <Form.Label>Birthday:</Form.Label>
+                <Form.Control
+                    type="text"
+                    value={birthday}
+                    onChange={(e) => setBirthday(e.target.value)}
                     required
 
                 />
