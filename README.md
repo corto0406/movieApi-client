@@ -6,7 +6,7 @@ App is built for learning React and libraries directed by the [Career Foundry](h
 
 App shows CRUD functionality with Mongo Database. Users are able to sign up, login and view movies.
 
-You can visit my app on [movieApi](https:// movie-table.netlify.app)
+You can visit my app on movie-table.netlify.app.
 
 ## Build Process
 
