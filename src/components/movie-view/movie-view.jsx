@@ -25,7 +25,7 @@ export const MovieView = ({ movies }) => {
                 <span>{movie.genre}</span>
             </div>
             <div>
-                <span> Description:</span>
+                <span> Description: </span>
                 <span>{movie.description}</span>
             </div>
             <Link to={`/`}>
